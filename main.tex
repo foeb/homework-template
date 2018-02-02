@@ -1,0 +1,92 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{mathptmx} % for 118
+%\usepackage{cmbright} % for 111
+% use none for 122
+
+\newcommand{\mytitle}{Homework \#2}
+\newcommand{\myauthor}{Phoebe Bell}
+\newcommand{\mydate}{February 2, 2018}
+\newcommand{\myclass}{Math 111B}
+
+%%%
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{enumitem}
+\setenumerate[0]{label={\rm (\alph*)}}
+
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\CC}{\mathbf{C}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\gengroup}[1]{\langle #1\rangle}
+\newcommand{\normeq}{\trianglelefteq}
+
+\newtheorem{exc}{Exercise}[section]
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{excp}[exc]{Exercise}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+\newtheorem*{claim}{Claim}
+\newtheorem*{notation}{Notation}
+
+\renewcommand{\qedsymbol}{\hfill\blacksquare}
+
+\usepackage{calc}
+\newcommand{\setexc}[2]{
+\setcounter{section}{#1}
+%\setcounter{subsection}{#2}
+\setcounter{exc}{#2-1}
+}
+
+%%%
+
+\begin{document}
+
+\begin{center}
+	{\Large \mytitle}\\
+        \vspace*{0.6em}
+        \myclass \\
+	\vspace*{0.6em}
+	\mydate \\
+	\vspace*{0.6em}
+	\myauthor \\
+        \vspace*{1.2em}
+\end{center}
+
+\begin{thm}
+This is a pretty big theorem.
+\end{thm}
+\begin{proof}
+And this is its proof.
+\[\int_\gamma f(z)dz.\]
+\end{proof}
+
+\begin{note}
+This isn't really saying anything.
+\end{note}
+
+\begin{defn}
+Let $R$ be a commutative ring. Then an ideal $I$ of $R$ is a subring of $R$ such
+that $rx\in I$ for all $r\in R$ and $x\in I$.
+\end{defn}
+
+
+\end{document}
